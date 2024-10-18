@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungsblog - Startseite </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
-      <label id="overlay" for="sidebar-active"></label>
+        <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </label>
 
             <a class="home-link" href="index.html">Home</a>
             <a href="wasistketo.html">Keto-Ernährung</a>
             <a href="rezepte.html">Rezepte</a>
         </div>
-    </nav> 
-    <main>
-        <section class="header">
-            <div class="intro">
-                <img src="assets/images/Frame 1.svg"> 
-                <h4>Entdecke die Welt der ketogenen Ernährung - gesunde Fette, köstliche Gerichte und mehr Energie für deinen Alltag!</h4>
-                <p>Willkommen auf meinem Blog rund um die <b>ketogene Ernährung!</b> Hier findest du alles, was du über Keto wissen musst - von einfachen, leckeren Rezepten bis hin zu nützlichen Tipps und fundierten Informationen über die Vorteile, Herausforderungen und Empfehlungen dieser Ernährungsweise.</p> 
-                <p>Egal, ob du gerade erst mit Keto startest oder schon ein erfahrener Keto-Fan bist, mein Ziel ist es, dich auf deinem Weg zu mehr Gesundheit und Wohlbefinden zu begleiten.</p>
-                <p>Entdecke neue Inspirationen und lass dich motivieren, deine Ernährung nachhaltig zu verändern!</p>
-            </div>
+    </nav>
+
+    <header>
+        <section class="intro">
+            <img src="assets/images/Frame 1.svg" max width="300px"
+                alt="Text in orangener Farbe, der lautet Keto-Ernährung">
+            <h4>Entdecke die Welt der ketogenen Ernährung - gesunde Fette, köstliche Gerichte und mehr Energie für
+                deinen Alltag!</h4>
+            <p>Willkommen auf meinem Blog rund um die <b>ketogene Ernährung!</b> Hier findest du alles, was du über Keto
+                wissen musst - von einfachen, leckeren Rezepten bis hin zu nützlichen Tipps und fundierten Informationen
+                über die Vorteile, Herausforderungen und Empfehlungen dieser Ernährungsweise.</p>
+            <p>Egal, ob du gerade erst mit Keto startest oder schon ein erfahrener Keto-Fan bist, mein Ziel ist es, dich
+                auf deinem Weg zu mehr Gesundheit und Wohlbefinden zu begleiten.</p>
+            <p>Entdecke neue Inspirationen und lass dich motivieren, deine Ernährung nachhaltig zu verändern!</p>
         </section>
+    </header>
+
+    <main>
         <section class="rezepte-liste">
             <h1>Rezepte</h1>
+            <div class="rezeptliste-container">
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/lasagne_AdobeStock_334571719.jpeg" width="300px"
+                        alt="Bild von eine Lasagne un einer Auflaufform auf einem Holztisch. Im Hintergrund einige zutaten wie Tomaten, Basilikum un Lasagne-Pasta">
+                    <h3>Zucchini Lasagne</h3>
+                    <div class="absatz-1">
+                        <p>Mittel</p>
+                        <p>45 Min</p>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
 
-            <article class="rezept-container-vertikal">
-                <h3>Zucchini Lasagne</h3>
-                <p>Mittel</p>
-                <p>45 Min</p>
-                <h4>Nährwerte pro 100 gr.:</h4>
-                <p>Kcal 166</p>
-                <p>Protein 12 gr</p>
-                <p>Kh 3 gr</p>
-                <p>Fett 12 gr</p>
-                <p>Ballaststoffe 0,8 gr</p>
-                <ul>
-                    <li><a href="zucchinilasagne.html">Rezept ansehen</a></li>
-                </ul> 
-            </article>
+                        <p>Kcal 166</p>
+                        <p>Protein 12 gr</p>
+                        <p>Kh 3 gr</p>
+                        <p>Fett 12 gr</p>
+                        <p>Ballaststoffe 0,8 gr</p>
+                    </div>
+                    <a href="zucchinilasagne.html">Rezept ansehen</a>
 
-            <article class="rezept-container-vertikal">
-                <h3>Schoko-Chips-Kekse</h3>
-                <p>Einfach</p>
-                <p>20 Min</p>
-                <h4>Nährwerte pro 100 gr.:</h4>
-                <p>Kcal 115</p>
-                <p>Protein 3 gr</p>
-                <p>Kh 0,6 gr</p>
-                <p>Fett 10 gr</p>
-                <p>Ballaststoffe 1,4 gr</p>
-                 <ul>
-                    <li><a href="schokokekse.html">Rezept ansehen</a></li>
-                 </ul>
-            </article>
+                </article>
 
-            <ul>
-                <li><a href="rezepte.html">Alle Rezepte entdecken</a></li>
-            </ul>               
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <p>Einfach</p>
+                        <p>20 Min</p>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <p>Kcal 115</p>
+                        <p>Protein 3 gr</p>
+                        <p>Kh 0,6 gr</p>
+                        <p>Fett 10 gr</p>
+                        <p>Ballaststoffe 1,4 gr</p>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+            </div>
+
+            <a href="rezepte.html">Alle Rezepte entdecken</a>
+
         </section>
 
         <section>
             <h1>Vorteile der Keto-Ernährung</h1>
-            <p><b>Effektive Gewichtsabnahme:</b> Die Keto-Ernährung fördert die Fettverbrennung und unterstützt eine schnelle Gewichtsreduktion.</p>
-            <p><b>Stabiler Blutzuckerspiegel: </b>Durch den Verzicht auf Kohlenhydrate bleibt der Blutzuckerspiegel konstant, was Heißhungerattacken verhindert.</p>
-            <p><b>Verbesserte mentale Klarheit: </b>Ketonkörper liefern dem Gehirn eine langanhaltende, stabile Energiequelle für bessere Konzentration.</p>
-            <p><b>Langanhaltende Sättigung: </b>Gesunde Fette und Proteine sorgen für ein länger anhaltendes Sättigungsgefühl.</p>
-            <p><b>Mehr Ausdauer: </b>Die Keto-Diät liefert dem Körper konstante Energie aus Fettreserven, ideal für körperliche Ausdauer und Leistung.</p>
-        
+            <p><b>Effektive Gewichtsabnahme:</b> Die Keto-Ernährung fördert die Fettverbrennung und unterstützt eine
+                schnelle Gewichtsreduktion.</p>
+            <p><b>Stabiler Blutzuckerspiegel: </b>Durch den Verzicht auf Kohlenhydrate bleibt der Blutzuckerspiegel
+                konstant, was Heißhungerattacken verhindert.</p>
+            <p><b>Verbesserte mentale Klarheit: </b>Ketonkörper liefern dem Gehirn eine langanhaltende, stabile
+                Energiequelle für bessere Konzentration.</p>
+            <p><b>Langanhaltende Sättigung: </b>Gesunde Fette und Proteine sorgen für ein länger anhaltendes
+                Sättigungsgefühl.</p>
+            <p><b>Mehr Ausdauer: </b>Die Keto-Diät liefert dem Körper konstante Energie aus Fettreserven, ideal für
+                körperliche Ausdauer und Leistung.</p>
 
-            <a href="wasistketo.html">Mehr erfahren</a></li>
+
+            <a href="wasistketo.html">Mehr erfahren</a>
 
         </section>
     </main>
 </body>
 
 </html>
-
-

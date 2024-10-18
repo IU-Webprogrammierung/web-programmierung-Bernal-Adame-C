@@ -1,21 +1,24 @@
-:root{
-    --color-1: #382e2c;
-    --color-2: #f3eae5;
+:root {
+    --color-1: #272423;
+    --color-2: #f5f1ee;
     --text-color: #f0f0f0;
     --accent-color: #FF6200;
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     height: 100%;
     font-size: 12pt;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.intro{
+
+/*header*/
+.intro {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,34 +28,46 @@ html{
     margin-top: 2rem;
     padding: 4rem;
     max-width: 50%;
+    border-radius: 5px;
+    height:fit-content;
 }
-.header{
+
+header {
     display: flex;
     justify-content: center;
-    height: 100%;
-    background-image: linear-gradient(to right, rgba(29, 25, 22, 0.75), rgba(82, 54, 37, 0.75)), url(assets/images/AdobeStock_220954410.jpeg);
+    height: fit-content;
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.75), rgba(14, 12, 11, 0.75)), url(assets/images/AdobeStock_220954410.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-body{
+
+header h4 {
+    text-align: center;
+    margin: 2rem;
+}
+
+body {
     height: 100%;
 }
+
 /*Navibar mit responsiv*/
-nav{
+nav {
     height: 60px;
     background-color: var(--color-1);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.links-container{
+
+.links-container {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-nav a{
+
+nav a {
     height: 100%;
     padding: 0 20px;
     display: flex;
@@ -60,26 +75,97 @@ nav a{
     text-decoration: none;
     color: var(--text-color);
 }
-nav a:hover{
+
+nav a:hover {
     background-color: var(--accent-color);
 }
-nav .home-link{
+
+nav .home-link {
     margin-right: auto;
 }
-nav svg{
+
+nav svg {
     fill: var(--accent-color);
 }
-#sidebar-active{
+
+#sidebar-active {
     display: none;
 }
-.open-sidebar-button, .close-sidebar-button{
+
+.open-sidebar-button,
+.close-sidebar-button {
     display: none;
 }
 
 
-@media(max-width: 450px){
-    .links-container{
-        
+/*main rezepte section */
+.rezepte-liste {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 3rem;
+    background-color: var(--color-1);
+    color: var(--accent-color);
+    text-align: center;
+    gap:30px
+    
+}
+
+.rezeptliste-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.rezept-card-vertikal {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    max-width: 300px;
+    border-radius: 5px;
+    padding-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rezept-card-vertikal img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.absatz-1, .absatz-2{
+display: flex;
+flex-direction: row;
+}
+
+/*Button*/
+.rezept-card-vertikal a, .rezepte-liste a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: var(--accent-color);
+    color: var(--color-2);
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+
+
+
+
+@media(max-width: 450px) {
+    .links-container {
+
         flex-direction: column;
         align-items: flex-start;
 
@@ -94,21 +180,26 @@ nav svg{
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
         transition: 0.75s ease-out;
     }
-    nav a{
+
+    nav a {
         box-sizing: border-box;
         height: auto;
         width: 100%;
         padding: 20px 30px;
         justify-content: flex-start;
     }
-    .open-sidebar-button, .close-sidebar-button{
+
+    .open-sidebar-button,
+    .close-sidebar-button {
         padding: 20px;
         display: block;
     }
-    #sidebar-active:checked ~ .links-container{
+
+    #sidebar-active:checked~.links-container {
         right: 0;
-        }
-    #sidebar-active:checked ~ #overlay{
+    }
+
+    #sidebar-active:checked~#overlay {
         height: 100%;
         width: 100%;
         position: fixed;
@@ -116,5 +207,47 @@ nav svg{
         left: 0;
         z-index: 9;
     }
-}
 
+/*main*/
+    .intro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--color-2);
+        margin: 2rem;
+        max-width: 75%;
+        border-radius: 5px;
+        padding: 1rem;
+        height: fit-content;
+
+    }
+
+    header img {
+        max-width: 70%;
+        margin-top: 2rem;
+    }
+
+    header {
+        background-image: none;
+
+    }
+
+    html {
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(29, 25, 22, 0.75), rgba(82, 54, 37, 0.75)), url(assets/images/AdobeStock_220954410.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .rezeptliste-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rezept-card-vertikal{
+        width: 100%;
+        max-width: 300px;
+    }
+}
