@@ -3,6 +3,8 @@
     --color-2: #f5f1ee;
     --text-color: #f0f0f0;
     --accent-color: #FF6200;
+    --color-3: #f7d0b7;
+    --color-4: #5e514d;
 }
 
 
@@ -13,6 +15,7 @@
 
 html {
     height: 100%;
+    min-width: 320px;
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,7 +32,7 @@ html {
     padding: 4rem;
     max-width: 50%;
     border-radius: 5px;
-    height:fit-content;
+    height: fit-content;
 }
 
 header {
@@ -104,12 +107,11 @@ nav svg {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    padding: 3rem;
+    padding: 5rem;
     background-color: var(--color-1);
     color: var(--accent-color);
     text-align: center;
-    gap:30px
-    
+    gap: 50px
 }
 
 .rezeptliste-container {
@@ -117,7 +119,7 @@ nav svg {
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -125,9 +127,10 @@ nav svg {
 .rezept-card-vertikal {
     background-color: var(--color-2);
     color: var(--color-1);
-    max-width: 300px;
+    
+    max-width: 400px;
     border-radius: 5px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 
     display: flex;
     justify-content: stretch;
@@ -137,19 +140,123 @@ nav svg {
     gap: 20px;
 }
 
-.rezept-card-vertikal img{
+.rezept-card-vertikal h4 {
+    margin-top: 1rem;
+}
+
+.rezept-card-vertikal img {
     width: 100%;
-    max-width: 300px;
+    max-width: 370px;
     border-radius: 5px 5px 0 0;
 }
 
-.absatz-1, .absatz-2{
-display: flex;
-flex-direction: row;
+.absatz-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
+.schwergrad,
+.dauer,
+.kcal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.absatz-2 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* .icon-container {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .icon-container-gross svg,*/
+.icon-container-gross img {
+    width: 42px;
+    /* Feste Breite */
+    height: 42px;
+    /* Feste Höhe */
+background-color: var(--color-3);
+padding: 10px;
+border-radius: 50px;
+}
+
+.icon-container-mittel img {
+    width: 25px;
+    /* Feste Breite */
+    height: 25px;
+    /* Feste Höhe */
+background-color: var(--color-3);
+padding: 15px;
+border-radius: 50px;
+}
+
+.icon-container-klein img {
+    width: 18px;
+    /* Feste Breite */
+    height: 18px;
+    /* Feste Höhe */
+    align-self: center;
+}
+
+.makros {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.wert-mit-icon {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+}
+
+/* .naehrwerte {
+    max-width: 200px;
+    font-size: 16px;
+    border-collapse: collapse;
+    background-color: var(--color-3);
+}
+
+td,
+th {
+    padding: 5px 10px ;
+    text-align: center;
+}
+
+td{
+    color: var(--color-4);
+    font-size: 13px;
+}
+
+thead {
+    background-color: var(--accent-color);
+    box-shadow: 0 0.5px 1px var(--color-1);
+} */
+
+
 /*Button*/
-.rezept-card-vertikal a, .rezepte-liste a{
+.rezept-card-vertikal a,
+.rezepte-liste a, 
+.vorteile a{
+    max-width: 100%;
     display: inline-block;
     text-decoration: none;
     padding: 8px 16px;
@@ -158,8 +265,83 @@ flex-direction: row;
     border-radius: 5px;
     margin-top: auto;
 }
+.vorteile a{
+    margin: 2rem;
+}
 
 
+/*Vorteile */
+.vorteile{
+    background-color: #ffffff;
+    padding: 3rem;
+    color: var(--color-1);
+    text-align: center;
+    margin: 2rem;
+}
+
+.vorteile article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vorteile-text{
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.vorteile article h4{
+font-size: 150%;
+
+}
+
+.vorteile article p{
+    max-width: 450px;
+}
+.mobil{
+    display: none;
+}
+
+/*footer*/
+footer {
+    background-color: var(--color-1);
+    color: var(--color-2);
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media(max-width: 800px) {
+    /*vorteile*/
+.desktop{
+    display: none;
+}
+.mobil{
+    display: unset;
+
+    flex-direction: column;
+    justify-items: center;
+}
+
+.mobil article{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.mobil .vorteile-text{
+    text-align: center;
+}
+.mobil .vorteile img{
+max-width: 250px;
+}
+
+
+}
 
 
 
@@ -208,7 +390,7 @@ flex-direction: row;
         z-index: 9;
     }
 
-/*main*/
+    /*main*/
     .intro {
         display: flex;
         align-items: center;
@@ -244,10 +426,17 @@ flex-direction: row;
     .rezeptliste-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .rezept-card-vertikal{
+    .rezept-card-vertikal {
         width: 100%;
         max-width: 300px;
     }
+    .vorteile{
+
+        margin: 0;
+
+    }
 }
+
