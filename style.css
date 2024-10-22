@@ -127,7 +127,7 @@ nav svg {
 .rezept-card-vertikal {
     background-color: var(--color-2);
     color: var(--color-1);
-    
+
     max-width: 400px;
     border-radius: 5px;
     padding-bottom: 2rem;
@@ -185,9 +185,9 @@ nav svg {
     /* Feste Breite */
     height: 42px;
     /* Feste Höhe */
-background-color: var(--color-3);
-padding: 10px;
-border-radius: 50px;
+    background-color: var(--color-3);
+    padding: 10px;
+    border-radius: 50px;
 }
 
 .icon-container-mittel img {
@@ -195,9 +195,9 @@ border-radius: 50px;
     /* Feste Breite */
     height: 25px;
     /* Feste Höhe */
-background-color: var(--color-3);
-padding: 15px;
-border-radius: 50px;
+    background-color: var(--color-3);
+    padding: 15px;
+    border-radius: 50px;
 }
 
 .icon-container-klein img {
@@ -207,7 +207,12 @@ border-radius: 50px;
     /* Feste Höhe */
     align-self: center;
 }
-
+.kcal{
+    background-color: var(--color-3);
+    padding: 10px 0 10px 0;
+    margin: 0 30px 0 30px;
+    border-radius: 5px;
+} 
 .makros {
     max-width: 100%;
     display: flex;
@@ -254,8 +259,8 @@ thead {
 
 /*Button*/
 .rezept-card-vertikal a,
-.rezepte-liste a, 
-.vorteile a{
+.rezepte-liste a,
+.vorteile a {
     max-width: 100%;
     display: inline-block;
     text-decoration: none;
@@ -265,27 +270,32 @@ thead {
     border-radius: 5px;
     margin-top: auto;
 }
-.vorteile a{
+
+.vorteile a {
     margin: 2rem;
 }
 
 
 /*Vorteile */
-.vorteile{
+.vorteile {
     background-color: #ffffff;
     padding: 3rem;
     color: var(--color-1);
     text-align: center;
     margin: 2rem;
 }
-
-.vorteile article{
+.vorteile .desktop{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.vorteile article {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.vorteile-text{
+.vorteile-text {
     min-width: 200px;
     display: flex;
     flex-direction: column;
@@ -293,16 +303,19 @@ thead {
     text-align: left;
 }
 
-.vorteile article h4{
-font-size: 150%;
+.vorteile article h4 {
+    font-size: 150%;
 
 }
 
-.vorteile article p{
+.vorteile article p {
     max-width: 450px;
+
 }
-.mobil{
+
+.mobil {
     display: none;
+
 }
 
 /*footer*/
@@ -313,39 +326,82 @@ footer {
     padding: 1rem;
 }
 
+.wasistketo{
+    text-align: justify;
+    padding: 2rem 8rem 8rem 8rem;
+    line-height: 150%;
+}
+.wasistketo h1, .wasistketo h3 {
+    text-align: left;
+    padding: 2rem 0 1rem 0;
+}
+
+.wasistketo h3 {
+    padding: 4rem 0 1rem 0;
+}
+.wasistketo li{
+    padding: 0 2rem 1rem 2rem;
+    list-style-type: none;
+}
+.wasistketo img {
+    width: 100%;
+margin-top: 1rem;
+
+}
 
 @media(max-width: 800px) {
+
     /*vorteile*/
-.desktop{
-    display: none;
-}
-.mobil{
-    display: unset;
+    .desktop {
+        display: none !important;
+    }
 
-    flex-direction: column;
-    justify-items: center;
-}
+    .mobil {
+        max-width: 100%;
+        display: flex;
+        /* Aktiviert das Flex-Layout */
+        justify-content: center;
+        /* Zentriert horizontal */
 
-.mobil article{
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-}
-.mobil .vorteile-text{
-    text-align: center;
-}
-.mobil .vorteile img{
-max-width: 250px;
-}
+        flex-wrap: wrap;
+        /*Damit sich die Artikel in mehrere Zeilen anordnen, wenn nötig */
+        gap: 20px;
+        /*Optional: Abstand zwischen den Artikeln */
+    }
 
 
+    .mobil article {
+        max-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .mobil .vorteile-text {
+        text-align: center;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .mobil .vorteile img {
+        max-width: 250px;
+    }
+    .wasistketo{
+        padding: 5rem;
+    }
+    .wasistketo li{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .wasistketo img{
+        max-width: 750px;
+    }
 }
 
 
 
 @media(max-width: 450px) {
+    /*Navi*/
     .links-container {
 
         flex-direction: column;
@@ -422,7 +478,19 @@ max-width: 250px;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+/*Rezepte Liste*/
+.rezepte-liste {
+    padding: 2rem;
+    max-width: 100%;
+    display: flex;
+    /* Aktiviert das Flex-Layout */
+    justify-content: center;
+    /* Zentriert horizontal */
 
+    flex-wrap: wrap;
+    /*Damit sich die Artikel in mehrere Zeilen anordnen, wenn nötig */
+    gap: 20px;
+}
     .rezeptliste-container {
         display: flex;
         flex-direction: column;
@@ -433,10 +501,29 @@ max-width: 250px;
         width: 100%;
         max-width: 300px;
     }
-    .vorteile{
 
+    .vorteile {
+        max-width: 100%;
         margin: 0;
 
     }
-}
 
+    .vorteile .mobil {
+        max-width: fit-content;
+    }
+    .vorteile .mobil article{
+        max-width: 100%;
+    }
+
+    .wasistketo{
+        padding: 1.5rem;
+        background-color: var(--color-2);
+        margin: 1rem;
+        border-radius: 5px;
+    }
+   
+    .ketogene-ernaerung h1, .ketogene-ernaerung h3{
+        text-align:left;
+        margin-bottom: 1rem;
+    }
+}
