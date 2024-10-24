@@ -1,67 +1,420 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungsblog - Erdnusssoße-Rezept </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
-      <label id="overlay" for="sidebar-active"></label>
+        <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </label>
 
             <a class="home-link" href="index.html">Home</a>
             <a href="wasistketo.html">Keto-Ernährung</a>
             <a href="rezepte.html">Rezepte</a>
         </div>
-    </nav> 
-    <main>
+    </nav>
+    <div class="bild-container">
+        <img class="rezeptbild" src="assets/images/lasagna.png"
+            alt="Dunkler Hintergrund mit Gemüse an der rechten Seite">
+    </div>
+    <main class="rezept">
 
-        <h1>Erdnusssoße</h1>
-        <p>Einfach</p>
-        <p>10 Min</p>
-        <h4>Nährwerte pro 100 gr.:</h4>
-        <p>Kcal 279</p>
-        <p>Protein 6,9 gr</p>
-        <p>Kh 4,6 gr</p>
-        <p>Fett 27,4 gr</p>
-        <p>Ballaststoffe 1,8 gr</p>
+        <div class="rezept-container">
+            <h1>Erdnusssoße</h1>
 
-        <p>Genießen Sie diese Sauce nach asiatischer Art als Beilage zu Fingerfood oder zum Abschmecken von gebratenem Gemüse. Servieren Sie sie zu Schweinefleisch oder Hähnchen.</p>
-        
-        <h2>Zutaten</h2>
-        <li>70 gr. Ernussbutter</li>
-        <li>200 ml. Kokosmilch</li>
-        <li>20 ml. Sojasoße</li>
-        <li>1 El Reißessig</li>
-        <li>1 El Sesamöl</li>
-        <li>Koriader</li>
-        <li>Süßüngsmittel</li>
-        <li>Limettensaftkonzentrat</li>
+            <div class="container-schwergrad-dauer">
+                <div class="schwergrad">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                    </div>
+                    <p>Einfach</p>
+                </div>
+                <div class="dauer">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                    </div>
+                    <p>10 Min</p>
+                </div>
+            </div>
+            <h4>Nährwerte pro 100 gr.:</h4>
+            <!-- <p>Schwierigkeitsgrad: Mittel</p>
+        <p>Dauer: 45 Min</p> -->
+            <div class="makros">
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                    </div>
+                    <p>279 Kcal</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                    </div>
+                    <h5>Protein</h5>
+                    <p>6,9 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                    </div>
+                    <h5>Kh.</h5>
+                    <p>4,6 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                    </div>
+                    <h5>Fette</h5>
+                    <p>27,4 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                    </div>
+                    <h5>Ballastoffe</h5>
+                    <p>1,8 gr.</p>
+                </div>
+            </div>
 
-        <h2>Schritt für Schritt</h2>
+            <p>Genießen Sie diese Sauce nach asiatischer Art als Beilage zu Fingerfood oder zum Abschmecken von
+                gebratenem Gemüse.</p>
+            <p>Servieren Sie sie zu Schweinefleisch oder Hähnchen.</p>
+            <section class="zutaten">
+                <h2>Zutaten</h2>
+                <article class="produkte-und-mengen">
+                    <div class="menge">
+                        <li>70 gr.</li>
+                        <li>200 ml.</li>
+                        <li>20 ml.</li>
+                        <li>1 El.</li>
+                        <li>1 El</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                    <div class="produkte">
+                        <li>Erdnussbutter</li>
+                        <li>Hackfleisch</li>
+                        <li>Kokosmilch</li>
+                        <li>Sojasoße</li>
+                        <li>Reißessig</li>
+                        <li>Sesamöl</li>
+                        <li>Koriader</li>
+                        <li>Süßüngsmittel</li>
+                        <li>Limettensaftkonzentrat</li>
+                    </div>
+                </article>
+            </section>
+            <section class="stepbystep">
+                <h2>Schritt für Schritt</h2>
+                <article class="step">
+                    <p class="step-ingredient">200 ml. Kokosmilch</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Kokosmilch in einem kleinen Topf zum Kochen bringen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">70 gr. Ernussbutter</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p class="step-accion">Die Erdnussbutter in der Kokosnussmilch auflösen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">20 ml. Sojasoße, 1 El Reißessig, 1 El Sesamöl, Koriader, Süßüngsmittel,
+                        Limettensaftkonzentrat</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Die restlichen Zutaten unter ständigem Rühren zugeben.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>5 Minuten bei niedriger Hitze köcheln lassen.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Auf Gemüse servieren und genießen</p>
+                </article>
+            </section>
+        </div>
 
-        <p>200 ml. Kokosmilch</p>
-        <p>Kokosmilch in einem kleinen Topf zum Kochen bringen.</p>
-        <p>70 gr. Ernussbutter</p>
-        <p>Die Erdnussbutter in der Kokosnussmilch auflösen.</p>
-        <p>20 ml. Sojasoße, 1 El Reißessig, 1 El Sesamöl, Koriader, Süßüngsmittel, Limettensaftkonzentrat</p>
-        <p>Die restlichen Zutaten unter ständigem Rühren zugeben.</p>
-        <p>5 Minuten bei niedriger Hitze köcheln lassen.</p>
-    
+        <section class="another-recipes">
+            <h1>Weitere Rezepte entdecken</h1>
 
-        
-    
+            <div class="rezeptliste-container">
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <!-- <img src="assets/images/lasagne_AdobeStock_334571719.jpeg" width="300px"
+                        alt="Bild von eine Lasagne un einer Auflaufform auf einem Holztisch. Im Hintergrund einige zutaten wie Tomaten, Basilikum un Lasagne-Pasta"> -->
+                    <h3>Zucchini Lasagne</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Mittel</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>45 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>0,8 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="zucchinilasagne.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+            </div>
+
+            <a href="rezepte.html">Alle Rezepte entdecken</a>
+
+        </section>
+
     </main>
 </body>
 

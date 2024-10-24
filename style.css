@@ -50,6 +50,8 @@ header h4 {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -231,6 +233,7 @@ nav svg {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: start;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -244,6 +247,9 @@ nav svg {
     align-items: center;
     font-size: 12px;
     gap: 8px;
+}
+.wert-mit-icon p{
+    text-wrap: nowrap;
 }
 
 /* .naehrwerte {
@@ -371,6 +377,12 @@ footer {
 }
 
 /*Rezept-Seite*/
+.bild-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .rezept {
     text-align: center;
     margin-top: 0;
@@ -381,9 +393,10 @@ footer {
 }
 
 .rezeptbild {
-    margin: 0;
+   
     max-width: 100%;
-    padding-bottom: 0;
+   height: auto;
+
 }
 
 .container-schwergrad-dauer {
@@ -414,12 +427,13 @@ footer {
 }
 
 .menge {
+    width: 300px;
     text-align: right;
-    padding-left: 5rem;
     text-wrap: nowrap;
 }
 
 .produkte {
+    width: 300px;
     text-align: left;
     text-wrap: nowrap;
 }

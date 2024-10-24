@@ -1,78 +1,437 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungsblog - Schoko-Chips-Kekse-Rezept </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
-      <label id="overlay" for="sidebar-active"></label>
+        <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </label>
 
             <a class="home-link" href="index.html">Home</a>
             <a href="wasistketo.html">Keto-Ernährung</a>
             <a href="rezepte.html">Rezepte</a>
         </div>
-    </nav>       
+    </nav>
+    <div class="bild-container">
+        <img class="rezeptbild" src="assets/images/lasagna.png"
+            alt="Dunkler Hintergrund mit Gemüse an der rechten Seite">
+    </div>
+    <main class="rezept">
 
+        <div class="rezept-container">
+            <h1>Schoko-Chips-Kekse</h1>
 
+            <div class="container-schwergrad-dauer">
+                <div class="schwergrad">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                    </div>
+                    <p>Einfach</p>
+                </div>
+                <div class="dauer">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                    </div>
+                    <p>20 Min</p>
+                </div>
+            </div>
+            <h4>Nährwerte pro 100 gr.:</h4>
+            <!-- <p>Schwierigkeitsgrad: Mittel</p>
+        <p>Dauer: 45 Min</p> -->
+            <div class="makros">
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                    </div>
+                    <p>115 Kcal</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                    </div>
+                    <h5>Protein</h5>
+                    <p>3 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                    </div>
+                    <h5>Kh.</h5>
+                    <p>0,6 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                    </div>
+                    <h5>Fette</h5>
+                    <p>10 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                    </div>
+                    <h5>Ballastoffe</h5>
+                    <p>1,4 gr.</p>
+                </div>
+            </div>
 
+            <p>Genießen Sie diese köstlichen Schokoladenkekse mit weniger als 1% Kohlenhydraten, ohne Mehl und ohne
+                Zucker.</p>
+            <p>Als Snack für zwischendurch oder zu heißen Getränken.</p>
+            <section class="zutaten">
+                <h2>Zutaten</h2>
+                <article class="produkte-und-mengen">
+                    <div class="menge">
+                        <li>40 gr.</li>
+                        <li>150 gr.</li>
+                        <li>50 gr.</li>
+                        <li>15 gr.</li>
+                        <li>1</li>
+                        <li>6 ml.</li>
+                        <li>10 dr.</li>
+                    </div>
+                    <div class="produkte">
+                        <li>Selbstgemachte Schokolade</li>
+                        <li>Mandelmehl</li>
+                        <li>Butter</li>
+                        <li>Backpulver</li>
+                        <li>Ei</li>
+                        <li>Süßungsmittel</li>
+                        <li>Butterkeks Drops</li>
+                    </div>
+                </article>
+            </section>
+            <section class="stepbystep">
+                <h2>Schritt für Schritt</h2>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Den Backofen auf 10 Grad vorheizen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">150 gr. Mandelmehl, 15 gr. Backpulver</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Die trockenen Zutaten in einer Rührschüssel mischen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">50 gr. Butter</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Die Butter schmelzen</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">50 gr. geschmolzene Butter, 1 Ei, Süßungsmittel, Butterkeks Drops.</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Mischen, bis die Zutaten gut miteinander verbunden sind.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">40 gr. Selbstgemachte Schokolade</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>die Schokolade in kleine Stückchen hacken, zum Teig geben und untermischen</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Auf einem Backblech mit einem Löffel kleine Kugeln formen. </p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>5 Minuten lang backen</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Das Backblech aus dem Ofen nehmen und die Kugeln mit einem Löffel in eine Keksform drücken.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Weitere 5 Minuten im Ofen backen.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Auskühlen lassen und genießen</p>
+                </article>
+            </section>
+        </div>
 
+        <section class="another-recipes">
+            <h1>Weitere Rezepte entdecken</h1>
 
-    <main>
+            <div class="rezeptliste-container">
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <!-- <img src="assets/images/lasagne_AdobeStock_334571719.jpeg" width="300px"
+                        alt="Bild von eine Lasagne un einer Auflaufform auf einem Holztisch. Im Hintergrund einige zutaten wie Tomaten, Basilikum un Lasagne-Pasta"> -->
+                    <h3>Zucchini Lasagne</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Mittel</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>45 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>0,8 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="zucchinilasagne.html">Rezept ansehen</a>
 
-        <h1>Schoko-Chips-Kekse</h1>
-        <p>Einfach</p>
-        <p>20 Min</p>
-        <h4>Nährwerte pro 100 gr.:</h4>
-        <p>Kcal 115</p>
-        <p>Protein 3 gr</p>
-        <p>Kh 0,6 gr</p>
-        <p>Fett 10 gr</p>
-        <p>Ballaststoffe 1,4 gr</p>
+                </article>
 
-        <p>Genießen Sie diese köstlichen Schokoladenkekse mit weniger als 1% Kohlenhydraten, ohne Mehl und ohne Zucker. Als Snack für zwischendurch oder zu heißen Getränken.</p>
-        
-        <h2>Zutaten</h2>
-        <li>40 gr. Selbstgemachte Schokolade</li>
-        <li>150 gr. Mandelmehl</li>
-        <li>50 gr. Butter</li>
-        <li>15 gr. Backpulver</li>
-        <li>1 Ei</li>
-        <li>Süßungsmittel</li>
-        <li>Butterkeks Drops</li>
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
 
-        <h2>Schritt für Schritt</h2>
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
 
-        <p>Den Backofen auf 160 Grad vorheizen.</p>
-        <p>150 gr. Mandelmehl, 15 gr. Backpulver</p>
-        <p>Die trockenen Zutaten in einer Rührschüssel mischen.</p>
-        <p>50 gr. Butter</p>
-        <p>Die Butter schmelzen</p>
-        <p>50 gr. Butter, 1 Ei, Süßungsmittel, Butterkeks Drops.</p>
-        <p>Mischen, bis die Zutaten gut miteinander verbunden sind.</p>
-        <p>40 gr. Selbstgemachte Schokolade</p>
-        <p>die Schokolade in kleine Stückchen hacken, zum Teig geben und untermischen</p>
-        <p>Auf einem Backblech mit einem Löffel kleine Kugeln formen. </p>
-        <p>5 Minuten lang backen</p>
-        <p>Das Backblech aus dem Ofen nehmen und die Kugeln mit einem Löffel in eine Keksform drücken.</p>
-        <p>Weitere 5 Minuten im Ofen backen.</p>
-        <p>Auskühlen lassen und genießen</p>
-       
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
 
-        
-    
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+            </div>
+
+            <a href="rezepte.html">Alle Rezepte entdecken</a>
+
+        </section>
+
     </main>
 </body>
 
