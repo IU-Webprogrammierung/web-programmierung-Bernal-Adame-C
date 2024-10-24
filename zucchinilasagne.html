@@ -1,78 +1,453 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungsblog - Zucchini Lasagne-Rezept </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
-      <label id="overlay" for="sidebar-active"></label>
+        <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </label>
 
             <a class="home-link" href="index.html">Home</a>
             <a href="wasistketo.html">Keto-Ernährung</a>
             <a href="rezepte.html">Rezepte</a>
         </div>
-    </nav> 
-    <main>
+    </nav>
+    <img class="rezeptbild" src="assets/images/lasagna.png" alt="Dunkler Hintergrund mit Gemüse an der rechten Seite">
+    <main class="rezept">
 
-        <h1>Zucchini Lasagne</h1>
-        <p>Schwierigkeitsgrad: Mittel</p>
-        <p>Dauer: 45 Min</p>
-        <h3>Nährwerte pro 100 gr.:</h3>
-        <p>Kcal 166</p>
-        <p>Protein 12 gr</p>
-        <p>Kh 3 gr</p>
-        <p>Fett 12 gr</p>
-        <p>Ballaststoffe 0,8 gr</p>
+        <div class="rezept-container">
+            <h1>Zucchini Lasagne</h1>
 
-        <p>Genießen Sie eine köstliche Lasagne, ohne ein schlechtes Gewissen wegen der vielen Kohlenhydrate zu haben. Mit einem köstlichen Aroma und Geschmack</p>
-        
-        <h2>Zutaten</h2>
-        <li>1 kg. Zucchini</li>
-        <li>750 gr. Hackfleisch</li>
-        <li>150 gr. Käse</li>
-        <li>100 gr. Passierte Tomaten</li>
-        <li>1 Zwiebel</li>
-        <li>400 gr. Champignon</li>
-        <li>200 ml. Schlagsahne</li>
+            <div class="container-schwergrad-dauer">
+                <div class="schwergrad">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                    </div>
+                    <p>Mittel</p>
+                </div>
+                <div class="dauer">
+                    <div class="icon-container-klein">
+                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                    </div>
+                    <p>45 Min</p>
+                </div>
+            </div>
+            <h4>Nährwerte pro 100 gr.:</h4>
+            <!-- <p>Schwierigkeitsgrad: Mittel</p>
+        <p>Dauer: 45 Min</p> -->
+            <div class="makros">
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                    </div>
+                    <p>166 Kcal</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                    </div>
+                    <h5>Protein</h5>
+                    <p>22 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                    </div>
+                    <h5>Kh.</h5>
+                    <p>3 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                    </div>
+                    <h5>Fette</h5>
+                    <p>12 gr.</p>
+                </div>
+                <div class="wert-mit-icon">
+                    <div class="icon-container-mittel">
+                        <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                    </div>
+                    <h5>Ballastoffe</h5>
+                    <p>0,8 gr.</p>
+                </div>
+            </div>
 
-        <h2>Schritt für Schritt</h2>
-
-        <p>Den Backofen auf 180 Grad vorheizen.</p>
-        <p>1 Zwiebel</p>
-        <p>die Zwiebel in kleine Würfel schneiden.</p>
-        <p>400 gr. Champignon</p>
-        <p>Die Champignons in Scheiben schneiden</p>
-        <p>750 gr. Hackfleisch</p>
-        <p>Das Hackfleisch mit der Zwiebel anbraten.</p>
-        <p>400 gr. Champignon, 200 ml. Schlagsahne, 100 gr. Passierte Tomaten.</p>
-        <p>Wenn das Fleisch angebraten ist, die Pilze, die Tomatensauce und die Sahne hinzufügen.</p>
-        <p>Gewürze nach Geschmack</p>
-        <p>Nach Geschmack würzen, z. B. mit Knoblauch und Pfeffer. </p>
-        <p>5 Minuten lang köcheln lassen.</p>
-        <p>1 kg. Zucchini</p>
-        <p>Schneiden Sie die Zucchini längs in etwa 0,5 cm lange Scheiben.</p>
-        <p>Eine Schicht der Fleischzubereitung in eine Lasagne Form geben.</p>
-        <p>Eine Schicht Zucchini geben</p>
-        <p>Die letzten beiden Schritte wiederholen, bis alle Zutaten aufgebraucht sind.</p>
-        <p>Zum Schluss eine Schicht Käse auflegen</p>
-        <p>Für 35 Minuten lang backen.</p>
-        <p>Servieren und genießen</p>
-
-        
+            <p>Genießen Sie eine köstliche Lasagne, ohne ein schlechtes Gewissen wegen der vielen Kohlenhydrate zu
+                haben.</p>
+            <p>Mit einem köstlichen Aroma und Geschmack</p>
+            <section class="zutaten">
+                <h2>Zutaten</h2>
+                <article class="produkte-und-mengen">
+                    <div class="menge">
+                        <li>1 kg.</li>
+                        <li>750 gr.</li>
+                        <li>150 gr.</li>
+                        <li>100 gr.</li>
+                        <li>1</li>
+                        <li>400 gr.</li>
+                        <li>200 ml.</li>
+                    </div>
+                    <div class="produkte">
+                        <li>Zucchini</li>
+                        <li>Hackfleisch</li>
+                        <li>Käse</li>
+                        <li>Passierte Tomaten</li>
+                        <li>Zwiebel</li>
+                        <li>Champignon</li>
+                        <li>Schlagsahne</li>
+                    </div>
+                </article>
+            </section>
+            <section class="stepbystep">
+                <h2>Schritt für Schritt</h2>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Den Backofen auf 180 Grad vorheizen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">1 Zwiebel</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p class="step-accion">die Zwiebel in kleine Würfel schneiden.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">400 gr. Champignon</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Die Champignons in Scheiben schneiden</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">750 gr. Hackfleisch</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Das Hackfleisch mit der Zwiebel anbraten.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">400 gr. Champignon, 200 ml. Schlagsahne, 100 gr. Passierte Tomaten.</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Wenn das Fleisch angebraten ist, die Pilze, die Tomatensauce und die Sahne hinzufügen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">Gewürze nach Geschmack</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Nach Geschmack würzen, z. B. mit Knoblauch und Pfeffer. </p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>5 Minuten lang köcheln lassen.</p>
+                </article>
+                <article class="step">
+                    <p class="step-ingredient">1 kg. Zucchini</p>
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Schneiden Sie die Zucchini längs in etwa 0,5 cm lange Scheiben.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Eine Schicht der Fleischzubereitung in eine Lasagne Form geben.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Eine Schicht Zucchini geben</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Die letzten beiden Schritte wiederholen, bis alle Zutaten aufgebraucht sind.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Zum Schluss eine Schicht Käse auflegen</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Für 35 Minuten lang backen.</p>
+                </article>
+                <article class="step">
+                    <img src="assets/images/schneidebrett.png" alt="dunkler hintergrund mit einem schneidebrett">
+                    <p>Servieren und genießen</p>
+                </article>
+            </section>
+        </div>
     
+        <section class="another-recipes">
+            <h1>Weitere Rezepte entdecken</h1>
+
+            <div class="rezeptliste-container">
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <!-- <img src="assets/images/lasagne_AdobeStock_334571719.jpeg" width="300px"
+                        alt="Bild von eine Lasagne un einer Auflaufform auf einem Holztisch. Im Hintergrund einige zutaten wie Tomaten, Basilikum un Lasagne-Pasta"> -->
+                    <h3>Zucchini Lasagne</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Mittel</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>45 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>0,8 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="zucchinilasagne.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+
+                <article class="rezept-card-vertikal">
+                    <img src="assets/images/keks_AdobeStock_57774828.jpeg" width="300px"
+                        alt="Bild von gestapelte Kekse mit Schokochips auf einem Tuch">
+                    <h3>Schoko-Chips-Kekse</h3>
+                    <div class="absatz-1">
+                        <div class="schwergrad">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                            </div>
+                            <p>Einfach</p>
+                        </div>
+                        <div class="dauer">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                            </div>
+                            <p>20 Min</p>
+                        </div>
+                    </div>
+                    <h4>Nährwerte pro 100 gr.:</h4>
+                    <div class="absatz-2">
+                        <div class="kcal">
+                            <div class="icon-container-klein">
+                                <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                            </div>
+                            <p>115 Kcal</p>
+                        </div>
+
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="schokokekse.html">Rezept ansehen</a>
+
+                </article>
+            </div>
+
+            <a href="rezepte.html">Alle Rezepte entdecken</a>
+
+        </section>
+
     </main>
 </body>
 
