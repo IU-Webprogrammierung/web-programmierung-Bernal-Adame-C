@@ -248,7 +248,8 @@ nav svg {
     font-size: 12px;
     gap: 8px;
 }
-.wert-mit-icon p{
+
+.wert-mit-icon p {
     text-wrap: nowrap;
 }
 
@@ -280,7 +281,8 @@ thead {
 .rezept-card-vertikal a,
 .rezepte-liste a,
 .vorteile a,
-.another-recipes a {
+.another-recipes a,
+.card-horizontal-button a {
     max-width: 100%;
     display: inline-block;
     text-decoration: none;
@@ -377,12 +379,13 @@ footer {
 }
 
 /*Rezept-Seite*/
-.bild-container{
+.bild-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .rezept {
     text-align: center;
     margin-top: 0;
@@ -393,9 +396,9 @@ footer {
 }
 
 .rezeptbild {
-   
+
     max-width: 100%;
-   height: auto;
+    height: auto;
 
 }
 
@@ -437,7 +440,8 @@ footer {
     text-align: left;
     text-wrap: nowrap;
 }
-.stepbystep{
+
+.stepbystep {
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -445,7 +449,8 @@ footer {
     align-items: center;
     gap: 20px;
 }
-.step{
+
+.step {
     max-width: 800px;
     width: 100%;
     display: flex;
@@ -453,20 +458,24 @@ footer {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-} 
-.step img{
+}
+
+.step img {
     max-width: 100%;
     height: auto;
 }
-.step-ingredient{
+
+.step-ingredient {
     color: var(--color-4);
     font-style: italic;
 }
-.step p{
+
+.step p {
     text-align: left;
     width: 100%;
-} 
-.another-recipes{
+}
+
+.another-recipes {
     padding: 2rem;
     margin-top: 5rem;
     background-color: var(--color-1);
@@ -474,9 +483,137 @@ footer {
     text-align: center;
     gap: 50px
 }
-.another-recipes h1{
+
+.another-recipes h1 {
     padding: 3rem 0 3rem 0;
 }
+
+
+/*rezepte-seite*/
+.recipes-page {
+    padding: 6rem;
+    
+}
+
+.recipes-page h1 {
+    padding-bottom: 2rem;
+
+}
+
+.recipes-page h2 {
+    padding-bottom: 1rem;
+}
+
+.rezept-kategorie {
+    padding: 3rem 0 3rem 0;
+}
+.schokokekse-card{
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/keks_AdobeStock_57774828.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 6rem 3rem 6rem;
+    border-radius: 5px;
+}
+.lasagne-card{
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/lasagna.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 6rem 3rem 6rem;
+    border-radius: 5px;
+}
+.erdnusssosse-card{
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/lasagne_AdobeStock_334571719.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 6rem 3rem 6rem;
+    border-radius: 5px;
+
+}
+.rezept-card-horizontal {
+    max-width: 100%;
+    color: var(--color-2);
+    border-radius: 5px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-horizontal-left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10pxs;
+}
+
+.rezept-kategorie .icon-container-mittel img {
+    background-color: var(--color-2);
+}
+
+.rezept-card-horizontal h1 {
+    padding-bottom: 2rem;
+    font-size: 200%;
+}
+
+.rezept-card-horizontal h3 {
+    padding-bottom: 4rem;
+}
+
+.rezept-card-horizontal h4 {
+    padding: 3rem 0 1rem 0;
+}
+
+.card-horizontal-right-up,
+.card-horizontal-left-up {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
+.rezept-kategorie .container-schwergrad-dauer {
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.card-horizontal-right {
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+}
+
+.card-horizontal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-horizontal-button a {
+    font-size: 120%;
+    padding: 12px 20px;
+    border-radius: 8;
+    text-wrap: nowrap;
+}
+
+
 
 
 @media(max-width: 800px) {
@@ -518,6 +655,7 @@ footer {
         max-width: 250px;
     }
 
+    /*definition-seite*/
     .wasistketo {
         padding: 5rem;
     }
@@ -529,15 +667,35 @@ footer {
     .wasistketo img {
         max-width: 750px;
     }
+
     .container-schwergrad-dauer {
-        gap:5rem;
+        gap: 5rem;
     }
-    .rezept{
+
+    /*rezept-seite*/
+    .rezept {
         padding: 2rem;
     }
-    .stepbystep{
+
+    .stepbystep {
         gap: 25px;
     }
+
+    /*rezepte-seite*/
+    .recipes-page {
+        padding: 4rem;
+    }
+
+    .rezept-card-horizontal,
+    .lasagne-card,
+    .schokokekse-card,
+    .erdnusssosse-card {
+        padding: 2rem 2rem 2rem 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 
@@ -646,6 +804,7 @@ footer {
         width: 100%;
         max-width: 300px;
     }
+
     .absatz-1 {
         justify-content: center;
         gap: 2rem;
@@ -666,6 +825,7 @@ footer {
         max-width: 100%;
     }
 
+    /*definition-seite*/
     .wasistketo {
         padding: 1.5rem;
         background-color: var(--color-2);
@@ -678,16 +838,43 @@ footer {
         text-align: left;
         margin-bottom: 1rem;
     }
+
     .container-schwergrad-dauer {
-        gap:3rem;
+        gap: 3rem;
     }
-    .rezept{
+
+    /*rezept-seite*/
+    .rezept {
         padding: 2rem 3rem 8rem 3rem;
     }
-    .stepbystep{
+
+    .stepbystep {
         margin: 0.5rem;
     }
-    .stepbystep{
+
+    .stepbystep {
         gap: 30px;
+    }
+
+    /*rezepte-seite*/
+    .recipes-page {
+        padding: 2rem;
+        background-color: var(--color-2);
+    }
+
+    .rezept-card-horizontal,
+    .lasagne-card,
+    .schokokekse-card,
+    .erdnusssosse-card {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .rezept-card-horizontal h1{
+       font-size: 150%;
+    }
+    .recipes-page h1{
+        padding-bottom: 1rem;
+    }
+    .rezept-kategorie{
+        padding: 1.5rem 0 1.5rem 0;
     }
 }

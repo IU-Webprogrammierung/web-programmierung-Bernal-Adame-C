@@ -1,97 +1,264 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernährungsblog - Rezepteliste </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav>
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>    
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
 
-      <label id="overlay" for="sidebar-active"></label>
+        <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
             <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </label>
 
             <a class="home-link" href="index.html">Home</a>
             <a href="wasistketo.html">Keto-Ernährung</a>
             <a href="rezepte.html">Rezepte</a>
         </div>
-    </nav> 
-    <main>
+    </nav>
+    <main class="recipes-page">
+
         <h1>Rezepte</h1>
-
-
-
         <section class="rezept-kategorie">
             <h2>Hauptspeise</h2>
-            <article class="rezept-card-horizontal">
-    
-                <h3>Zucchini Lasagne</h3>
-                <p>Mittel</p>
-                <p>45 Min</p>
-                <h4>Nährwerte pro 100 gr.:</h4>
-                <p>Kcal 166</p>
-                <p>Protein 12 gr</p>
-                <p>Kh 3 gr</p>
-                <p>Fett 12 gr</p>
-                <p>Ballaststoffe 0,8 gr</p>
-                <ul>
-                    <li><a href="zucchinilasagne.html">Rezept ansehen</a></li>
-                </ul> 
-    
-            </article>
-    
+            <div class="lasagne-card">
+                <article class="rezept-card-horizontal">
+                    <div class="card-horizontal-left">
+                        <h1>Zucchini Lasagne</h1>
+                        <div class="card-horizontal-left-up">
+                            <div class="container-schwergrad-dauer">
+                                <div class="schwergrad">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                    </div>
+                                    <p>Mittel</p>
+                                </div>
+                                <div class="dauer">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                                    </div>
+                                    <p>45 Min</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Nährwerte pro 100 gr.:</h4>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                                </div>
+                                <h5>Kcal</h5>
+                                <p>166</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>12 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>0,8 gr.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-horizontal-right">
+                        <div class="card-horizontal-button">
+                            <a href="zucchinilasagne.html">Rezept ansehen</a>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="rezept-kategorie">
-            <h2>Saucen und Beilagen</h2>  
-            <article class="rezept-card-horizontal">
-                <h3>Erdnusssoße</h3>
-                <p>Einfach</p>
-                <p>10 Min</p>
-                <h4>Nährwerte pro 100 gr.:</h4>
-                <p>Kcal 279</p>
-                <p>Protein 6,9 gr</p>
-                <p>Kh 4,6 gr</p>
-                <p>Fett 27,4 gr</p>
-                <p>Ballaststoffe 1,8 gr</p>
-                <ul>
-                    <li><a href="erdnusssosse.html">Rezept ansehen</a></li>
-                </ul>  
-    
-            </article>
-    
+            <h2>Saucen und Beilagen</h2>
+            <div class="erdnusssosse-card">
+                <article class="rezept-card-horizontal">
+                    <div class="card-horizontal-left">
+                        <h1>Erdnusssoße</h1>
+                        <div class="card-horizontal-left-up">
+                            <div class="container-schwergrad-dauer">
+                                <div class="schwergrad">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                    </div>
+                                    <p>Einfach</p>
+                                </div>
+                                <div class="dauer">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                                    </div>
+                                    <p>10 Min</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Nährwerte pro 100 gr.:</h4>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                                </div>
+                                <h5>Kcal</h5>
+                                <p>279</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>6,9 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>4,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>27,4 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,8 gr.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-horizontal-right">
+                        <div class="card-horizontal-button">
+                            <a href="erdnusssosse.html">Rezept ansehen</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
         </section>
 
         <section class="rezept-kategorie">
-            <h2>Süße Speise</h2>  
-            <article class="rezept-card-horizontal">
-                <h3>Schoko-Chips-Kekse</h3>
-                <p>Einfach</p>
-                <p>20 Min</p>
-                <h4>Nährwerte pro 100 gr.:</h4>
-                <p>Kcal 115</p>
-                <p>Protein 3 gr</p>
-                <p>Kh 0,6 gr</p>
-                <p>Fett 10 gr</p>
-                <p>Ballaststoffe 1,4 gr</p>
-                <ul>
-                    <li><a href="schokokekse.html">Rezept ansehen</a></li>
-                </ul>   
-    
-            </article>
-    
-        </section>     
+            <h2>Süße Speise</h2>
+            <div class="schokokekse-card">
+                <article class="rezept-card-horizontal">
+                    <div class="card-horizontal-left">
+                        <h1>Schoko-Chips-Kekse</h1>
+                        <div class="card-horizontal-left-up">
+                            <div class="container-schwergrad-dauer">
+                                <div class="schwergrad">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/chefmuetze.svg" alt="icon von einer Chefmuetze">
+                                    </div>
+                                    <p>Einfach</p>
+                                </div>
+                                <div class="dauer">
+                                    <div class="icon-container-klein">
+                                        <img src="assets/icons/uhr.svg" alt="icon von einer Uhr">
+                                    </div>
+                                    <p>20 Min</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Nährwerte pro 100 gr.:</h4>
+                        <div class="makros">
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/kcal.svg" alt="icon von einer Flame">
+                                </div>
+                                <h5>Kcal</h5>
+                                <p>115</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/protein.svg" max-width="100%" alt="Icon von einem Ei">
+                                </div>
+                                <h5>Protein</h5>
+                                <p>3 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/carbs.svg" max-width="100%" alt="Icon von einem Brot">
+                                </div>
+                                <h5>Kh.</h5>
+                                <p>0,6 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/fett.svg" width="25x" alt="Icon von Speck">
+                                </div>
+                                <h5>Fette</h5>
+                                <p>10 gr.</p>
+                            </div>
+                            <div class="wert-mit-icon">
+                                <div class="icon-container-mittel">
+                                    <img src="assets/icons/ballaststoffe.svg" width="25x" alt="Icon von Weizen">
+                                </div>
+                                <h5>Ballastoffe</h5>
+                                <p>1,4 gr.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-horizontal-right">
+                        <div class="card-horizontal-button">
+                            <a href="schokokekse.html">Rezept ansehen</a>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
+
+        </section>
 
     </main>
+    <footer>
+        <p>© 2024 Carolina Bernal Adame, Inc. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
