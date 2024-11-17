@@ -100,7 +100,36 @@
             <p>Genießen Sie eine köstliche Lasagne, ohne ein schlechtes Gewissen wegen der vielen Kohlenhydrate zu
                 haben.</p>
             <p>Mit einem köstlichen Aroma und Geschmack.</p>
-            <section class="zutaten">
+
+            <h2>Zutaten</h2>
+            <!-- Test Zutatenmengen Rechner -->
+            <div class="rechner">
+            
+                <!-- Stepper / Number Input -->
+                <label for="portionen">Anzahl der Portionen</label>
+                <div class="number-input">
+                    <button onclick="changePortion(-1)">-</button>
+                    <input type="number" id="portionen" value="4" min="1">
+                    <button onclick="changePortion(1)">+</button>
+                </div>
+            
+                <!-- Zutatenliste -->
+                <div id="ingredients">
+                    <ul>
+                    <li><span class="menge" data-base="250">1000</span> g Zucchini</li>
+                    <li><span class="menge" data-base="187.5">750</span> g Hackfleisch</li>
+                    <li><span class="menge" data-base="37.5">150</span> g Käse</li>
+                    <li><span class="menge" data-base="25">100</span> g Passierte Tomaten</li>
+                    <li><span class="menge-fraction" data-base="0.25">1</span> zwiebel</li>
+                    <li><span class="menge" data-base="100">400</span> g Champignon</li>
+                    <li><span class="menge" data-base="50">200</span> ml Schlagsahne</li>
+                </ul>
+                </div>
+            </div>
+
+
+            
+            <!-- <section class="zutaten">
                 <h2>Zutaten</h2>
                 <article class="produkte-und-mengen">
                     <div class="menge">
@@ -122,7 +151,7 @@
                         <li>Schlagsahne</li>
                     </div>
                 </article>
-            </section>
+            </section> -->
             <section class="stepbystep">
                 <h2>Schritt für Schritt</h2>
                 <article class="step">
@@ -455,6 +484,11 @@
     <footer>
         <p>© 2024 Carolina Bernal Adame, Inc. All rights reserved.</p>
     </footer>
+
+    <script type="text/javascript" src="skript.js"></script>
+    
+
+    
 </body>
 
 </html>

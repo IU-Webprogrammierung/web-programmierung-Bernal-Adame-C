@@ -13,7 +13,8 @@
     padding: 0;
 }
 
-html {
+html,
+.rechner {
     height: 100%;
     min-width: 320px;
     font-size: 12pt;
@@ -252,30 +253,6 @@ nav svg {
 .wert-mit-icon p {
     text-wrap: nowrap;
 }
-
-/* .naehrwerte {
-    max-width: 200px;
-    font-size: 16px;
-    border-collapse: collapse;
-    background-color: var(--color-3);
-}
-
-td,
-th {
-    padding: 5px 10px ;
-    text-align: center;
-}
-
-td{
-    color: var(--color-4);
-    font-size: 13px;
-}
-
-thead {
-    background-color: var(--accent-color);
-    box-shadow: 0 0.5px 1px var(--color-1);
-} */
-
 
 /*Button*/
 .rezept-card-vertikal a,
@@ -611,6 +588,65 @@ footer {
     padding: 12px 20px;
     border-radius: 8;
     text-wrap: nowrap;
+}
+
+/* Test Zutatenmengen Rechner*/
+.rechner {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 2rem;
+}  
+
+.number-input button {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    border-radius: 15%;
+} 
+/* Entfernt die Pfeile (Spinner) */
+.number-input input::-webkit-inner-spin-button,
+.number-input input::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Entfernt die Pfeile in WebKit-Browsern */
+    margin: 0;
+}
+.number-input input {
+    -moz-appearance: textfield; /* Entfernt die Pfeile in Firefox */
+    appearance: textfield;      /* Standard appearance für moderne Browser */
+
+    /* Bestehendes Styling */
+    width: 40px;
+    font-size: 100%;
+    text-align: center;
+    background-color: var(--color-3);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 15%;
+}
+
+#zutaten p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+} 
+#ingredients ul {
+    list-style: none; 
+    padding: 0;       
 }
 
 
