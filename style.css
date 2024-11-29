@@ -13,8 +13,7 @@
     padding: 0;
 }
 
-html,
-.rechner {
+html{
     height: 100%;
     min-width: 320px;
     font-size: 12pt;
@@ -236,7 +235,11 @@ nav svg {
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
-    gap: 15px;
+}
+.makros-group{
+    display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
 }
 
 .wert-mit-icon {
@@ -404,19 +407,19 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-}
+} 
 
-.menge {
+/* .menge {
     width: 300px;
     text-align: right;
     text-wrap: nowrap;
-}
+}  */
 
-.produkte {
+/* .produkte {
     width: 300px;
     text-align: left;
     text-wrap: nowrap;
-}
+}  */
 
 .stepbystep {
     margin: 2rem;
@@ -593,25 +596,31 @@ footer {
 /* Test Zutatenmengen Rechner*/
 .rechner {
     max-width: 400px;
+    width: 100%;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    padding-left: 40px;
+    padding-right: 40ox;
     border-radius: 5px;
     background-color: var(--color-2);
     color: var(--color-1);
+    box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 .number-input {
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin: 2rem;
+    margin: 1rem auto;
+    flex-wrap: wrap;
 }  
 
 .number-input button {
     width: 40px;
-    height: 40px;
     background: var(--accent-color);
     border: none;
     padding: 5px 10px;
@@ -632,21 +641,25 @@ footer {
 
     /* Bestehendes Styling */
     width: 40px;
-    font-size: 100%;
     text-align: center;
-    background-color: var(--color-3);
     border: none;
     padding: 0.5rem;
+    background-color: var(--color-3);
     border-radius: 15%;
+    font-size: 100%;
 }
 
-#zutaten p {
+#zutaten li {
     margin: 10px 0;
     font-size: 1.2rem;
 } 
 #ingredients ul {
+    text-align: left;
     list-style: none; 
-    padding: 0;       
+    padding: 0;   
+    margin: 0;
+    width: 100%;
+    overflow-wrap: break-word;    
 }
 
 
@@ -731,6 +744,10 @@ footer {
         align-items: center;
     }
 
+    .rechner {
+        max-width: 300px;
+        padding: 15px;
+    }
 
 }
 
@@ -913,4 +930,10 @@ footer {
     .rezept-kategorie{
         padding: 1.5rem 0 1.5rem 0;
     }
+    .rechner {
+        max-width: 95%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    
 }
