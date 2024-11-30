@@ -13,7 +13,7 @@
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
     min-width: 320px;
     font-size: 12pt;
@@ -23,25 +23,30 @@ html{
 /*header*/
 .intro {
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-    gap: 20px;
-    background-color: var(--color-2);
+    gap: 30px;
+    color: var(--color-2);
     margin: 5rem;
     margin-top: 2rem;
-    padding: 4rem;
-    max-width: 50%;
+    padding: 1.5rem;
+    max-width: 45%;
     border-radius: 5px;
     height: fit-content;
+}
+.intro h4{
+    text-align: left;
+    margin: 0;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     height: fit-content;
-    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.75), rgba(14, 12, 11, 0.75)), url(assets/images/AdobeStock_220954410.jpeg);
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.5), rgba(14, 12, 11, 0.5)), url(assets/images/hint_AdobeStock_216178584.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: left;
 }
 
 header h4 {
@@ -236,10 +241,11 @@ nav svg {
     align-items: start;
     flex-wrap: wrap;
 }
-.makros-group{
+
+.makros-group {
     display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .wert-mit-icon {
@@ -331,6 +337,14 @@ footer {
 }
 
 /*was ist keto-Seite*/
+.bild-intro-keto img {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+}
+
 .wasistketo {
     text-align: justify;
     padding: 2rem 8rem 8rem 8rem;
@@ -407,7 +421,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-} 
+}
 
 /* .menge {
     width: 300px;
@@ -420,14 +434,15 @@ footer {
     text-align: left;
     text-wrap: nowrap;
 }  */
-.recipe-description{
+.recipe-description {
     color: var(--color-1);
     background-color: var(--text-color);
     text-align: left;
     padding: 20px;
     border-radius: 5px;
-    
+
 }
+
 .stepbystep {
     margin: 2rem;
     display: flex;
@@ -479,7 +494,7 @@ footer {
 /*rezepte-seite*/
 .recipes-page {
     padding: 6rem;
-    
+
 }
 
 .recipes-page h1 {
@@ -494,7 +509,8 @@ footer {
 .rezept-kategorie {
     padding: 3rem 0 3rem 0;
 }
-.schokokekse-card{
+
+.schokokekse-card {
     max-width: 100%;
     background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/keks_AdobeStock_57774828.jpeg);
     background-repeat: no-repeat;
@@ -503,7 +519,8 @@ footer {
     padding: 3rem 6rem 3rem 6rem;
     border-radius: 5px;
 }
-.lasagne-card{
+
+.lasagne-card {
     max-width: 100%;
     background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/lasagna.png);
     background-repeat: no-repeat;
@@ -512,7 +529,8 @@ footer {
     padding: 3rem 6rem 3rem 6rem;
     border-radius: 5px;
 }
-.erdnusssosse-card{
+
+.erdnusssosse-card {
     max-width: 100%;
     background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/lasagne_AdobeStock_334571719.jpeg);
     background-repeat: no-repeat;
@@ -522,11 +540,12 @@ footer {
     border-radius: 5px;
 
 }
+
 .rezept-card-horizontal {
     max-width: 100%;
     color: var(--color-2);
     border-radius: 5px;
-   
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -624,7 +643,7 @@ footer {
     gap: 5px;
     margin: 1rem auto;
     flex-wrap: wrap;
-}  
+}
 
 .number-input button {
     width: 40px;
@@ -635,16 +654,21 @@ footer {
     font-size: 1.2rem;
     color: var(--text-color);
     border-radius: 15%;
-} 
+}
+
 /* Entfernt die Pfeile (Spinner) */
 .number-input input::-webkit-inner-spin-button,
 .number-input input::-webkit-outer-spin-button {
-    -webkit-appearance: none; /* Entfernt die Pfeile in WebKit-Browsern */
+    -webkit-appearance: none;
+    /* Entfernt die Pfeile in WebKit-Browsern */
     margin: 0;
 }
+
 .number-input input {
-    -moz-appearance: textfield; /* Entfernt die Pfeile in Firefox */
-    appearance: textfield;      /* Standard appearance für moderne Browser */
+    -moz-appearance: textfield;
+    /* Entfernt die Pfeile in Firefox */
+    appearance: textfield;
+    /* Standard appearance für moderne Browser */
 
     /* Bestehendes Styling */
     width: 40px;
@@ -659,14 +683,15 @@ footer {
 #zutaten li {
     margin: 10px 0;
     font-size: 1.2rem;
-} 
+}
+
 #ingredients ul {
     text-align: left;
-    list-style: none; 
-    padding: 0;   
+    list-style: none;
+    padding: 0;
     margin: 0;
     width: 100%;
-    overflow-wrap: break-word;    
+    overflow-wrap: break-word;
 }
 
 
@@ -712,6 +737,9 @@ footer {
     }
 
     /*definition-seite*/
+    .intro{
+        max-width: 60%;
+    }
     .wasistketo {
         padding: 5rem;
     }
@@ -810,11 +838,12 @@ footer {
     /*main*/
     .intro {
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
         gap: 10px;
-        background-color: var(--color-2);
+        
         margin: 2rem;
+        margin-top: 1rem;
         max-width: 75%;
         border-radius: 5px;
         padding: 1rem;
@@ -824,7 +853,6 @@ footer {
 
     header img {
         max-width: 70%;
-        margin-top: 2rem;
     }
 
     header {
@@ -834,7 +862,7 @@ footer {
 
     html {
         height: 100%;
-        background-image: linear-gradient(to right, rgba(29, 25, 22, 0.75), rgba(82, 54, 37, 0.75)), url(assets/images/AdobeStock_220954410.jpeg);
+        background-image: linear-gradient(to right, rgba(19, 18, 17, 0.5), rgba(14, 12, 11, 0.5)), url(assets/images/hint_AdobeStock_216178584.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -928,19 +956,23 @@ footer {
     .erdnusssosse-card {
         padding: 2rem 1rem 2rem 1rem;
     }
-    .rezept-card-horizontal h1{
-       font-size: 150%;
+
+    .rezept-card-horizontal h1 {
+        font-size: 150%;
     }
-    .recipes-page h1{
+
+    .recipes-page h1 {
         padding-bottom: 1rem;
     }
-    .rezept-kategorie{
+
+    .rezept-kategorie {
         padding: 1.5rem 0 1.5rem 0;
     }
+
     .rechner {
         max-width: 95%;
         padding: 10px;
         margin: 0 auto;
     }
-    
+
 }
