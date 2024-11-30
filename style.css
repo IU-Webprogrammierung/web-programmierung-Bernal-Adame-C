@@ -420,7 +420,14 @@ footer {
     text-align: left;
     text-wrap: nowrap;
 }  */
-
+.recipe-description{
+    color: var(--color-1);
+    background-color: var(--text-color);
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
 .stepbystep {
     margin: 2rem;
     display: flex;

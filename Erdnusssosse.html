@@ -96,37 +96,38 @@
                 </div>
             </div>
 
-            <p>Genießen Sie diese Sauce nach asiatischer Art als Beilage zu Fingerfood oder zum Abschmecken von
-                gebratenem Gemüse.</p>
-            <p>Servieren Sie sie zu Schweinefleisch oder Hähnchen.</p>
+            <article class="recipe-description">
+                <p>Genießen Sie diese Sauce nach asiatischer Art als Beilage zu Fingerfood oder zum Abschmecken von
+                    gebratenem Gemüse. Servieren Sie sie zu Schweinefleisch oder Hähnchen.</p>
+            </article>
             <section class="zutaten">
                 <h2>Zutaten</h2>
                 <!-- Zutatenmengen Rechner -->
-            <div class="rechner">
-            
-                <!-- Stepper / Number Input -->
-                <label for="portionen">Anzahl der Portionen</label>
-                <div class="number-input">
-                    <button onclick="changePortion(-1)">-</button>
-                    <input type="number" id="portionen" value="4" min="1">
-                    <button onclick="changePortion(1)">+</button>
+                <div class="rechner">
+
+                    <!-- Stepper / Number Input -->
+                    <label for="portionen">Anzahl der Portionen</label>
+                    <div class="number-input">
+                        <button onclick="changePortion(-1)">-</button>
+                        <input type="number" id="portionen" value="4" min="1">
+                        <button onclick="changePortion(1)">+</button>
+                    </div>
+
+                    <!-- Zutatenliste -->
+                    <div id="ingredients">
+                        <ul>
+                            <li><span class="menge" data-base="17,5">70</span> gr. Erdnussbutter</li>
+                            <li><span class="menge" data-base="50">200</span> ml. Kokosmilch</li>
+                            <li><span class="menge" data-base="5">20</span> ml. Sojasoße</li>
+                            <li><span class="menge-fraction" data-base="0.25">1</span> El. Reißessig</li>
+                            <li><span class="menge-fraction" data-base="0.25">1</span> El. Sesamöl</li>
+                            <li><span class="menge-fraction" data-base="0.5">2</span> El. Koriander</li>
+                            <li><span class="menge" data-base="2.5">10</span> ml. Süßungsmittel</li>
+                            <li><span class="menge" data-base="10">40</span> ml. Limettensaftkonzentrat</li>
+                        </ul>
+                    </div>
                 </div>
-            
-                <!-- Zutatenliste -->
-                <div id="ingredients">
-                    <ul>
-                    <li><span class="menge" data-base="17,5">70</span> gr. Erdnussbutter</li>
-                    <li><span class="menge" data-base="50">200</span> ml. Kokosmilch</li>
-                    <li><span class="menge" data-base="5">20</span> ml. Sojasoße</li>
-                    <li><span class="menge-fraction" data-base="0.25">1</span> El. Reißessig</li>
-                    <li><span class="menge-fraction" data-base="0.25">1</span> El. Sesamöl</li>
-                    <li><span class="menge-fraction" data-base="0.5">2</span> El. Koriander</li>
-                    <li><span class="menge" data-base="2.5">10</span> ml. Süßungsmittel</li>
-                    <li><span class="menge" data-base="10">40</span> ml. Limettensaftkonzentrat</li>
-                </ul>
-                </div>
-            </div>
-                
+
             </section>
             <section class="stepbystep">
                 <h2>Schritt für Schritt</h2>
@@ -303,7 +304,7 @@
     </footer>
 
     <script type="text/javascript" src="skript.js"></script>
-   
+
 </body>
 
 </html>
