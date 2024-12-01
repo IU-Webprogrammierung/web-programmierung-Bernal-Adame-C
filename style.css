@@ -512,7 +512,7 @@ footer {
 
 .schokokekse-card {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/keks_AdobeStock_57774828.jpeg);
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/AdobeStock_905649562.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -532,7 +532,7 @@ footer {
 
 .erdnusssosse-card {
     max-width: 100%;
-    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/lasagne_AdobeStock_334571719.jpeg);
+    background-image: linear-gradient(to right, rgba(19, 18, 17, 0.6), rgba(14, 12, 11, 0.6)), url(assets/images/Erdnussosse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
